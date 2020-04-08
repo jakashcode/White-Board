@@ -1,0 +1,109 @@
+*{
+    margin:0;
+    padding: 0;;
+}
+.tool-img{
+    height:4rem;
+    width:4rem;
+    margin-right:1rem;
+}
+.toolBar{
+    display: flex;
+    justify-content: center;
+    background-color: brown;
+}
+
+.tool-options{
+    height:8rem;
+width:12rem;
+background-color: darkblue;
+display: none;
+}
+.pencil-size{
+    height: 50%;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pencil-color{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.show{
+    display: block;
+
+}
+.hide{
+    display: none;
+}
+input{
+    width:90%;
+}
+
+.colors{
+    width: 20%;
+    height: 60%;
+    margin-right:.25rem;
+    border-radius: 50%;
+}
+.red,.close{
+    background-color: red;
+}
+.green{
+    background-color: green;
+}
+.blue,.minmize{
+    background-color: blue;
+}
+.tool{
+    position: relative;
+}
+.tool-options{
+    position: absolute;
+    top:3.75rem;
+    right: -2.75rem;
+
+}
+
+/* sticky css starts here
+to move sticky pad use left and top values 
+*/
+
+/* sticky css starts here */
+.sticky-pad{
+    height:10rem;
+    width:10rem;
+    position: absolute;
+    top:30vh;
+    left:30vw;
+    
+}
+.navbar{
+    height:20%;
+    width:100%;
+    background-color: green;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+.writingPad{
+    height: 80%;
+    width:100%;
+    background-color: chocolate;
+    
+   }
+   .hidden{
+       display: none;
+   }
+   .text-area{
+       width:100%;
+       height: 100%;
+       background-color: chocolate;
+}
+/* child inhertit % from it's parent */

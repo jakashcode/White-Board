@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style_soln.css">
+</head>
+
+<body>
+    <!-- canvas Tag -->
+
+    <div class="toolBar">
+        <div class="tool">
+            <img src="NewIcons/Black_Pencil.svg" class="tool-img " id="pencil-img"alt="" onclick="handleToolChange('pencil')">
+            <div class="tool-options pencil"  >
+                <div class="pencil-size" >
+                    <input type="range" id="pen-size" name="points" min="5" max="10" value="20" >
+                </div>
+                <div class="pencil-color">
+                    <div class="colors red" onclick="handleColorChange('red')"></div>
+                    <div class="colors green" onclick="handleColorChange('#55efc4')"></div>
+                    <div class="colors blue" onclick="handleColorChange('blue')"></div>
+                </div>
+            </div>
+        </div>
+        <div class="tool">
+            <img src="NewIcons/Eraser.svg" alt="" class="tool-img" id="eraser-img" onclick="handleToolChange('eraser')">
+            <div class="tool-options eraser"  >
+                <div class="eraser-size" >
+                    <input type="range" id="eraser-size" min="5" max="10" value="20" >
+
+                </div>
+
+
+            </div>
+        </div>
+        <div class="tool">
+            <img src="NewIcons/StickyNote.svg" class="tool-img " id="stickynote-img"alt="" onclick="handleToolChange('sticky')" >
+            
+            <!--ADD CLASS IN STICKY -->
+            
+        </div>
+        <div class="tool">
+            <input type="file" accept = "file_extension|image/*" class="image-upload hidden">
+            <!-- <img src = "photo.svg" alt = ""> -->
+            <img src="NewIcons/Photo.svg" class="tool-img "  alt="" id="imagePicker" >
+        </div>
+        <div class="tool">
+            <img src="NewIcons/Undo.svg" class="tool-img undo-tool" alt=""  >
+            
+            <!--ADD CLASS IN STICKY -->
+            
+        </div>
+        <div class="tool">
+            <img src="NewIcons/Redo.svg" class="tool-img redo-tool" alt=""  >
+            
+            <!--ADD CLASS IN STICKY -->
+            
+        </div>
+        <div class="tool">
+            <img src="NewIcons/Glass.svg" class="tool-img zoomin_tool" alt=""  >
+            
+            <!--ADD CLASS IN STICKY -->
+            
+        </div>
+        <div class="tool">
+            <img src="NewIcons/Glass.svg" class="tool-img zoomout_tool" alt=""  >
+            
+            <!--ADD CLASS IN STICKY -->
+            
+        </div>
+
+        <div class="tool">
+            <img src="NewIcons/Download.svg" class="tool-img download_tool" alt=""  >
+            
+            <!--ADD CLASS IN STICKY -->
+            
+        </div>
+
+    </div>
+    <canvas class="board">
+    </canvas>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.dev.js" 
+    crossorigin></script> 
+
+    <script src="script_soln.js"></script>
+    <script src="canvas_soln.js"></script>
+    <script src="sticky.js"></script>
+    <script src="upload.js"></script>
+    <script src="reciever.js"></script>
+</body>
+
+</html>
+
