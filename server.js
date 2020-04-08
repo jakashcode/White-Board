@@ -27,6 +27,9 @@ io.on("connection", function(socket) {
     socket.on("mymouseup",function(){
         socket.broadcast.emit("mymouseup");
     })
+    socket.on("sizechange",function(size){
+        socket.broadcast.emit("sizechange",size);
+    })
     // (joined)client->server
     
   });

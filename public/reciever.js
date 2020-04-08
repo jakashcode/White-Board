@@ -31,5 +31,9 @@ socket.on("mymousemove",function(point){
 socket.on("mymouseup",function(){
     isemiitedMouse = false;
 })
+
+socket.on("sizechange",function(size){
+    ctx.lineWidth=size;
+})
 // mymousemove
 // mymouseup

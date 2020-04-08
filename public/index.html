@@ -16,7 +16,7 @@
             <img src="NewIcons/Black_Pencil.svg" class="tool-img " id="pencil-img"alt="" onclick="handleToolChange('pencil')">
             <div class="tool-options pencil"  >
                 <div class="pencil-size" >
-                    <input type="range" id="pen-size" name="points" min="5" max="10" value="20" >
+                    <input type="range" id="pen-size" name="points" min="5" max="10" value="20" onchange="sizeChange(this.value)" >
                 </div>
                 <div class="pencil-color">
                     <div class="colors red" onclick="handleColorChange('red')"></div>
@@ -29,7 +29,7 @@
             <img src="NewIcons/Eraser.svg" alt="" class="tool-img" id="eraser-img" onclick="handleToolChange('eraser')">
             <div class="tool-options eraser"  >
                 <div class="eraser-size" >
-                    <input type="range" id="eraser-size" min="5" max="10" value="20" >
+                    <input type="range" id="eraser-size" min="5" max="10" value="20" onchange="sizeChange(this.value)">
 
                 </div>
 

@@ -23,7 +23,10 @@ input.addEventListener("change",function(e){
     console.log(input.value);
     ctx.lineWidth=input.value;
 })
-
+function sizeChange(size) {
+    ctx.lineWidth = size;
+    socket.emit("sizechange", size);
+  }
 const eraserSize=document.querySelector("#eraser-size");
 ctx.lineWidth=eraserSize.value;
 eraserSize.addEventListener("change",function(e){
